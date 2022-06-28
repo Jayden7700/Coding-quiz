@@ -1,18 +1,18 @@
-var Highscore = document.querySelector("#Highscore")
+var HighScore = document.querySelector("#Highscore")
 var clear = document.querySelector("#Clear")
 var GoBack = document.querySelector("#GoBack")
 
-// local storage for highscores
-var allHighscores = localStorage.getItem("allHighscores")
-allHighscores = JSON.parse(allHighscores)
+// local storage for highScores
+var allHighScores = localStorage.getItem("allHighScores")
+allHighScores = JSON.parse(allHighScores)
 
-if (allHighscores !== null) {
+if (allHighScores !== null) {
 
-    for (var i = 0; i < allHighscores.length; i++) {
+    for (var i = 0; i < allHighScores.length; i++) {
 
         var createLi = document.createElement("li")
-        createLi.textContent = allHighscores[i].intiials + " " + allHighscores[i].score
-        Highscore.appendChild(createLi)
+        createLi.textContent = allHighScores[i].initials + " " + allHighScores[i].score
+        HighScore.appendChild(createLi)
     }
 }
 
