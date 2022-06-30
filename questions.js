@@ -1,3 +1,17 @@
+// Declare variables
+var score = 0
+var questionIndex = 0
+var currentTime = document.querySelector("#currentTime")
+var timer = document.querySelector("#startTime")
+var questionsDiv = document.querySelector("#questionsDiv")
+var wrapper = document.querySelector("#wrapper")
+var secondsLeft = 80
+//Interval time 
+var holdInterval = 0
+// penalty time
+var penalty = 10
+var ulCreate = document.createElement("ul")
+
 // Array for questions 
 var questions = [
     {
@@ -16,7 +30,7 @@ var questions = [
         answer: "All of the above"
     },
     {
-        title: "The condition in an if / else statement is conclosed withing ____.",
+        title: "The condition in an if / else statement is enclosed withing ____.",
         choices: ["Quotes", "Curly brackets", "Parenthesis", "Square brackets"],
         answer: "parenthesis"
     },
@@ -24,5 +38,7 @@ var questions = [
         title: "Commonly used data types DO NOT include:",
         choices: ["Strings", "Booleans", "Alerts", "Numbers"],
         answer: "Alerts"
-    }
+    },
 ]
+
+
