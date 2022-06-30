@@ -9,7 +9,6 @@ allHighScores = JSON.parse(allHighScores)
 if (allHighScores !== null) {
 
     for (var i = 0; i < allHighScores.length; i++) {
-
         var createLi = document.createElement("li")
         createLi.textContent = allHighScores[i].initials + " " + allHighScores[i].score
         HighScore.appendChild(createLi)
