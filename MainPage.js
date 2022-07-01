@@ -1,5 +1,5 @@
 var HighScore = document.querySelector("#Highscore")
-var clear = document.querySelector("#Clear")
+var Clear = document.querySelector("#Clear")
 var GoBack = document.querySelector("#GoBack")
 
 // local storage for highScores
@@ -16,7 +16,7 @@ if (allHighScores !== null) {
 }
 
 // Used to clear scores
-clear.addEventListener("click", function () {
+Clear.addEventListener("click", function () {
     localStorage.clear()
     location.reload()
 })
