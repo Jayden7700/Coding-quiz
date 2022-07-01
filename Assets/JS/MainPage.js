@@ -18,7 +18,9 @@ if (allHighScores !== null) {
 // Used to clear scores
 Clear.addEventListener("click", function () {
     localStorage.clear()
+    console.log("🚀 ~ file: MainPage.js ~ line 21 ~  localStorage.clear()", localStorage.clear())
     location.reload()
+
 })
 
 // Used to move to index page
